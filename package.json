@@ -1,0 +1,27 @@
+{
+  "name": "billboardtospotify",
+  "version": "1.0.0",
+  "description": "This is a server that will parse a Billboard chart for the top songs from any two dates and will add those songs to the client's Spotify account.",
+  "main": "index.js",
+  "scripts": {
+    "test": "make test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TusharM1/billboard-to-spotify.git"
+  },
+  "keywords": [
+    "Billboard",
+    "Spotify"
+  ],
+  "author": "Tushar Mahajan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TusharM1/billboard-to-spotify/issues"
+  },
+  "homepage": "https://github.com/TusharM1/billboard-to-spotify#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "request": "^2.88.0"
+  }
+}
