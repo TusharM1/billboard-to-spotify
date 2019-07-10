@@ -14,7 +14,7 @@ request = http.request(url, options, (response) => {
 	// console.log("Got a response");
 	response.on('data', (body) => {
 		console.log(String(body));
-	});
+});
 	// console.log(response);
 });
 
