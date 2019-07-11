@@ -1,10 +1,11 @@
 const express = require('express');
 const scraper_class = require('./scraper.js');
+const Scraper = scraper_class.Scraper;
 
 const app = express();
 app.use(express.json())
 
-var scraper = new scraper_class();
+var scraper = new Scraper();
 
 // Returns a JSON string of all of the charts in each category
 app.get('/get-charts/', (request, response) => {
