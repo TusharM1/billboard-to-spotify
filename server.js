@@ -1,27 +1,27 @@
 const express = require('express');
-const scraper_class = require('./scraper.js');
-const Scraper = scraper_class.Scraper;
+const scraper = require('./scraper.js');
+// const Scraper = scraper_class.Scraper;
 
 const app = express();
 app.use(express.json())
 
-var scraper = new Scraper();
+// var scraper = new Scraper();
 
 // Returns a JSON string of all of the charts in each category
 app.get('/get-charts/', (request, response) => {
-	console.log('Get Charts');
+	// console.log('Get Charts');
 	response.json(scraper.getAllCharts());
 });
 
 // Returns a JSON string of all of the songs
 app.get('/scrape-songs/', (request, response) => {
-	console.log('Scrape Songs');
+	// console.log('Scrape Songs');
 	response.json(scraper.scrape(request.query.category, request.query.chart, request.query.starting_date, request.query.ending_date, request.query.max_size));
 });
 
 // Possibly returns a JSON string of the songs that were not added
 app.post('/create-playlist/', (request, response) => {
-	console.log('Create Playlist');
+	// console.log('Create Playlist');
 	response.end();
 	// response.json(request.body);
 });
