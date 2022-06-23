@@ -22,7 +22,7 @@
   "homepage": "https://github.com/TusharM1/billboard-to-spotify#readme",
   "dependencies": {
     "express": "^4.17.1",
-    "jsdom": "^15.1.1",
+    "jsdom": "^16.5.0",
     "request": "^2.88.0",
     "sugar-date": "^2.0.6"
   }
